@@ -1,0 +1,269 @@
+html{
+  width:100%;
+  height:100%;
+  
+}
+.polygon {
+  position: absolute;
+  width: 32px; 
+  height: 19px;
+  background-color: #64C7CC;
+  margin: 9px 0;
+  text-align:center;
+  font-size:12px;
+}
+
+.polygon:before,
+.polygon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  bottom: 0;
+  left: 0;
+}
+
+.polygon:before {
+  bottom: 100%;
+  border-bottom: 9px solid #64C7CC;
+}
+
+.polygon:after {
+  top: 100%;
+  width: 0;
+  border-top: 9px solid #64C7CC;
+}
+
+#map{
+  position:relative;
+  height:100%;
+}
+
+
+
+
+.brown {
+  background-color: #fecd71;
+}
+.brown:before {
+  border-bottom-color: #fecd71;
+}
+.brown:after {
+  border-top-color: #fecd71;
+}
+.brown.hover:hover {
+  background-color: #e1ad4c;
+  cursor:pointer;
+}
+.brown.hover:hover:before {
+  border-bottom-color: #e1ad4c;
+  cursor:pointer;
+}
+.brown.hover:hover:after {
+  border-top-color: #e1ad4c;
+  cursor:pointer;
+}
+
+
+
+.red {
+  background-color: #d98594;
+}
+.red:before {
+  border-bottom-color: #d98594;
+}
+.red:after {
+  border-top-color: #d98594;
+}
+.red.hover:hover {
+  background-color: #bc5e6e;
+  cursor:pointer;
+}
+.red.hover:hover:before {
+  border-bottom-color: #bc5e6e;
+  cursor:pointer;
+}
+.red.hover:hover:after {
+  border-top-color: #bc5e6e;
+  cursor:pointer;
+}
+
+
+
+.blue {
+  background-color: #6396d8;
+}
+.blue:before {
+  border-bottom-color: #6396d8;
+}
+.blue:after {
+  border-top-color: #6396d8;
+}
+.blue.hover:hover {
+  background-color: #4574b1;
+  cursor:pointer;
+}
+.blue.hover:hover:before {
+  border-bottom-color: #4574b1;
+  cursor:pointer;
+}
+.blue.hover:hover:after {
+  border-top-color: #4574b1;
+  cursor:pointer;
+}
+
+
+
+.green {
+  background-color: #7a5c9c;
+}
+.green:before {
+  border-bottom-color: #7a5c9c;
+}
+.green:after {
+  border-top-color: #7a5c9c;
+}
+.green:hover {
+  background-color: #5c407d;
+  cursor:pointer;
+}
+.green:hover:before {
+  border-bottom-color: #5c407d;
+  cursor:pointer;
+}
+.green:hover:after {
+  border-top-color: #5c407d;
+  cursor:pointer;
+}
+
+*{
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+/*house*/
+.h{
+  background-image:url(img/dog-house-icon.png);
+  cursor:pointer;
+}
+
+/* more gold in minimap*/
+.g{
+  background-image:url('img/more_gold.gif');
+}
+
+/*tower*/
+.t,.w_t:hover{
+  background-image:url(img/chess_tower.png);
+}
+
+
+.w_u1,
+.w_u2,
+.w_u3,
+.w_u4,
+.w_t{
+  cursor:pointer;
+}
+
+.u1,.w_u1:hover{
+  background-image : url(img/Warrior_Icon1.png) !important;
+}
+
+.u2,.w_u2:hover{
+  background-image : url(img/Warrior_Icon2.gif) !important;
+}
+
+.u3,.w_u3:hover{
+  background-image : url(img/Warrior_Icon3.png) !important;
+}
+
+.u4,.w_u4:hover{
+  background-image : url(img/Warrior_Icon4.png) !important;
+}
+
+.back {
+    position: absolute;
+    background: rgba(240, 240, 240, 0.56);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display:none;
+}
+
+#menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    border-top: 1px dashed red;
+    display:none;
+    z-index : 20;
+}
+
+
+#sale_tower {
+    position: absolute;
+    top: -35px;
+    background: green;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 20px;
+    left: 48px;
+    cursor: pointer;
+}
+
+#sale_unit {
+    cursor: pointer;
+    position: absolute;
+    top: -35px;
+    background: green;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 20px;
+    left: 236px;
+}
+
+#select_unit {
+    background: url('img/Warrior_Icon1.png');
+    padding: 10px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid red;
+    position: absolute;
+    left: 286px;
+    top: 13px;
+}
+
+#select_tower {
+    cursor: pointer;
+    background: url('img/chess_tower.png');
+    padding: 10px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid blue;
+    position: absolute;
+    left: 97px;
+    top: 13px;
+}
+
+#end{
+    cursor: pointer;
+    position: absolute;
+    left: 440px;
+    padding: 9px;
+    background: green none repeat scroll 0% 0%;
+    top: 8px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
